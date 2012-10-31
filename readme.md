@@ -5,14 +5,14 @@ Rotate images with optional animation and easing
 ------------------------------------------------
 
 Based upon and directly replaces _jquery.rotate.js_ version 3.1, with one 
-important difference... the `.rotate()` method in this version returns a
+important difference... the ***.rotate()*** method in this version returns a
 jQuery selection, making it easier to manipulate the rotating objects
 created by this plugin.
 
 # Usage
 
 Download the file _jquery.rotateX.js_ and place it in one of your web application's
-folders the add a reference in the <head> of each page in which it will be used.
+folders then add a reference just above the `</head>` tag of each page in which it will be used.
 
 For example, if the file is in your website's "/scripts" folder, use this line:-
 
@@ -33,7 +33,7 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 * **angle**
 
-	`[Number]` - _default 0 (zero)_ - Angle value in degrees, for immediate rotation
+	***[Number]*** - _default 0 (zero)_ - Angle value in degrees, for immediate rotation
 
 	Example:
 
@@ -50,13 +50,13 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 * **options**
 
-	`[Object]` Object containing options for rotation. 
+	***[Object]*** Object containing options for rotation. 
 	
 	***Supported options:***
 
 	* *angle*
 
-		`[Number]` - default _0 (zero)_ - Angle value in degrees, for immediate rotation
+		***[Number]*** - default _0 (zero)_ - Angle value in degrees, for immediate rotation
 
 		Example:
 
@@ -64,7 +64,7 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 	* *bind*
 
-		`[Object]` Object containing events to bind on to a rotation object. $(this) inside events points to a rotation object - this way you can chain execution of rotations - $(this).rotate(...)
+		***[Object]*** Object containing events to bind on to a rotation object. $(this) inside events points to a rotation object - this way you can chain execution of rotations - $(this).rotate(...)
 
 		Example:
 
@@ -79,7 +79,7 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 	* *animateTo*
 
-		`[Number]` - default 0 _(zero)_ - Angle value in degrees, for rotation to be animated to from current angle value (or given angle option value)
+		***[Number]*** - default _0 (zero)_ - Angle value in degrees, for rotation to be animated to from current angle value (or given angle option value)
 
 	    Example:
 	
@@ -87,7 +87,7 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 	* *duration*
 
-		`[Number]` - default 1000 - Specifies a duration of animation, in milliseconds, when using animateTo action
+		***[Number]*** - default _1000_ - Specifies a duration of animation, in milliseconds, when using animateTo action
 
 		Example:
 
@@ -103,15 +103,15 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 	* *step*
 
-		`[Function]` - default _null_ - A function that will be executed on every animation step.
+		***[Function]*** - default _null_ - A function that will be executed on every animation step.
 		
 		Arguments:
 
-			___currentAngle___ The current angle is provided as first argument.
+		___currentAngle___ The current angle is provided as first argument.
 
 	* *easing*
 
-		`[Function]` - default (see below) - Easing function is used to make animation look more natural. 
+		***[Function]*** - default _(see below)_ - Easing function is used to make animation look more natural. 
 		
 		The function uses five parameters (x,t,b,c,d) to support easing from http://gsgd.co.uk/sandbox/jquery/easing/ (for more details please see documentation at their website). Remember to include easing plugin before using it in jQueryRotate!
 
@@ -144,7 +144,7 @@ For example, if the file is in your website's "/scripts" folder, use this line:-
 
 	* *callback*
 
-		`[Function]` A function to be called when animation finishes.
+		***[Function]*** A function to be called when animation finishes.
 
 		Example:
 
